@@ -165,7 +165,7 @@ public class ZestGuidance implements Guidance {
     // ---------- LOGGING / STATS OUTPUT ------------
 
     /** Whether to print log statements to stderr (debug option; manually edit). */
-    protected final boolean verbose = true;
+    protected final boolean verbose = Boolean.getBoolean("jqf.ei.VERBOSE");
 
     /** A system console, which is non-null only if STDOUT is a console. */
     protected final Console console = System.console();
